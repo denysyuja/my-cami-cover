@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Notebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playwrite GB S', sans-serif;
+            background-color: #ffc0cb; /* Merah muda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .cover {
+            width: 210mm;
+            height: 297mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffc0cb;
+            position: relative;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gif-container img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .spotify-embed {
+            margin-top: 20px;
+        }
+
+        /* Tombol Berbentuk Love */
+        .love-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .love-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .love-button::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        .love-button::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="title">Notebook our love with 1 month anniversarryyy yayyy</div>
+        <div class="gif-container">
+            <img src="https://github.com/denysyuja/cantik.mp3/raw/main/polaroid/20250104_170141_0001.gif" alt="GIF 1">
+            <img src="https://github.com/denysyuja/cantik.mp3/raw/main/polaroid/20250104_170458_0002.gif" alt="GIF 2">
+        </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/00h76MrPxPEVXQKyqTDEAb?utm_source=generator" 
+            width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <a href="https://www.google.com" class="love-button" title="Go to Google"></a>
+    </div>
+</body>
+</html>
